@@ -1,4 +1,5 @@
-import {input} from './io_utils.js'
+import {input} from '.io_utils.js'
+
 
 
 function main(){
@@ -36,7 +37,7 @@ function preço(){
                     console.log(cupom_fiscal)
             }
         }else if (qtd > 5){
-            if (eh_cartao){
+            if (eh_cartao()){
                 const preço = qtd * 5.80
                 const desconto = preço * 0.05
                 const preço_total = preço - desconto
@@ -55,7 +56,7 @@ function preço(){
                 let cupom_fiscal = 'Filé'
                 cupom_fiscal += `\n A quantidade é de ${qtd.toFixed(2)} kg`
                 cupom_fiscal += `\n O preço é ${preço.toFixed(2)} reais`
-                cupom_fiscal += '\n O pagamento é no cartão'
+                cupom_fiscal += '\n O pagamento é em espécie'
                 cupom_fiscal += `\n O desconto é de ${desconto.toFixed(2)} reais`
                 cupom_fiscal += `\n O total a pagar é de ${preço_total.toFixed(2)} reais`
 
@@ -91,7 +92,7 @@ function preço(){
                     console.log(cupom_fiscal)
             }
         }else if (qtd > 5){
-            if (eh_cartao){
+            if (eh_cartao()){
                 const preço = qtd * 7.80
                 const desconto = preço * 0.05
                 const preço_total = preço - desconto
@@ -105,12 +106,12 @@ function preço(){
                 console.log(cupom_fiscal)
             }else{
                 const preço = qtd * 7.80
-                const desconto = preço * 0.05
+                const desconto = 0
                 const preço_total = preço - desconto
                 let cupom_fiscal = 'picanha'
                 cupom_fiscal += `\n A quantidade é de ${qtd.toFixed(2)} kg`
                 cupom_fiscal += `\n O preço é ${preço.toFixed(2)} reais`
-                cupom_fiscal += '\n O pagamento é no cartão'
+                cupom_fiscal += '\n O pagamento é em espécie'
                 cupom_fiscal += `\n O desconto é de ${desconto.toFixed(2)} reais`
                 cupom_fiscal += `\n O total a pagar é de ${preço_total.toFixed(2)} reais`
 
@@ -146,7 +147,7 @@ function preço(){
                     console.log(cupom_fiscal)
             }
         }else if (qtd > 5){
-            if (eh_cartao){
+            if (eh_cartao()){
                 const preço = qtd * 7.80
                 const desconto = preço * 0.05
                 const preço_total = preço - desconto
@@ -160,12 +161,12 @@ function preço(){
                 console.log(cupom_fiscal)
             }else{
                 const preço = qtd * 7.80
-                const desconto = preço * 0.05
+                const desconto = 0
                 const preço_total = preço - desconto
                 let cupom_fiscal = 'Alcatra'
                 cupom_fiscal += `\n A quantidade é de ${qtd.toFixed(2)} kg`
                 cupom_fiscal += `\n O preço é ${preço.toFixed(2)} reais`
-                cupom_fiscal += '\n O pagamento é no cartão'
+                cupom_fiscal += '\n O pagamento é em espécie'
                 cupom_fiscal += `\n O desconto é de ${desconto.toFixed(2)} reais`
                 cupom_fiscal += `\n O total a pagar é de ${preço_total.toFixed(2)} reais`
 
